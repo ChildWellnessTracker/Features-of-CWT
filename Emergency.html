@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Information</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px; /* Space at the top */
+  }
+  .main-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  select, .info {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+  }
+  .container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 400px;
+  }
+</style>
+</head>
+<body>
+
+<div class="main-heading">Emergency Information</div>
+<div class="description">All The Emergency Information You Need For Your Child</div>
+
+<div class="container">
+  <h1>Select a Doctor Type</h1>
+  <select id="doctorType" onchange="showDoctorInfo()">
+    <option value="">Select Type...</option>
+    <option value="Pediatrician">Pediatrician - Aditya Kumar</option>
+    <option value="Neurologist">Neurologist - Priyanka Sharma</option>
+    <option value="Cardiologist">Cardiologist - Rohit Singh</option>
+    <option value="Ophthalmologist">Ophthalmologist - Aarav Patel</option>
+    <option value="Rheumatologist">Rheumatologist - Ishita Desai</option>
+    <option value="Gastroenterologist">Gastroenterologist - Ananya Joshi</option>
+    <option value="Urologist">Urologist - Vivek Nair</option>
+    <option value="Dermatologist">Dermatologist - Kavya Reddy</option>
+    <option value="Nephrologist">Nephrologist - Arjun Mehta</option>
+    <option value="Oncologist">Oncologist - Riya Malik</option>
+    <option value="Psychiatrist">Psychiatrist - Aryan Chatterjee</option>
+    <option value="Endocrinologist">Endocrinologist - Nikhil Gupta</option>
+    <option value="Pulmonologist">Pulmonologist - Sanya Iyer</option>
+    <option value="Orthopedic Surgeon">Orthopedic Surgeon - Karan Bajaj</option>
+    <option value="Gynecologist">Gynecologist - Deepika Verma</option>
+  </select>
+  <div class="info" id="doctorInfo"></div>
+</div>
+
+<div class="container">
+  <h1>Select a Hospital Type</h1>
+  <select id="hospitalType" onchange="showHospitalInfo()">
+    <option value="">Select Type...</option>
+    <option value="Cardiac">Cardiac Hospital</option>
+    <option value="Dermatology">Dermatology Hospital</option>
+    <option value="Neurology">Neurology Hospital</option>
+    <option value="Pediatric">Pediatric Hospital</option>
+    <option value="Oncology">Oncology Hospital</option>
+    <option value="Gynecology">Gynecology Hospital</option>
+    <option value="Orthopedic">Orthopedic Hospital</option>
+    <option value="Psychiatric">Psychiatric Hospital</option>
+    <option value="Ophthalmology">Ophthalmology Hospital</option>
+    <option value="Urology">Urology Hospital</option>
+    <option value="Pulmonology">Pulmonology Hospital</option>
+    <option value="Endocrinology">Endocrinology Hospital</option>
+    <option value="Gastroenterology">Gastroenterology Hospital</option>
+    <option value="Rheumatology">Rheumatology Hospital</option>
+    <option value="Nephrology">Nephrology Hospital</option>
+  </select>
+  <div class="info" id="hospitalInfo"></div>
+</div>
+
+<script>
+const doctors = {
+  "Pediatrician": {"name": "Aditya Kumar", "number": "91-123-123-1234"},
+  "Neurologist": {"name": "Priyanka Sharma", "number": "91-123-123-1234"},
+  "Cardiologist": {"name": "Rohit Singh", "number": "91-123-123-1234"},
+  "Ophthalmologist": {"name": "Aarav Patel", "number": "91-123-123-1234"},
+  "Rheumatologist": {"name": "Ishita Desai", "number": "91-123-123-1234"},
+  "Gastroenterologist": {"name": "Ananya Joshi", "number": "91-123-123-1234"},
+  "Urologist": {"name": "Vivek Nair", "number": "91-123-123-1234"},
+  "Dermatologist": {"name": "Kavya Reddy", "number": "91-123-123-1234"},
+  "Nephrologist": {"name": "Arjun Mehta", "number": "91-123-123-1234"},
+  "Oncologist": {"name": "Riya Malik", "number": "91-123-123-1234"},
+  "Psychiatrist": {"name": "Aryan Chatterjee", "number": "91-123-123-1234"},
+  "Endocrinologist": {"name": "Nikhil Gupta", "number": "91-123-123-1234"},
+  "Pulmonologist": {"name": "Sanya Iyer", "number": "91-123-123-1234"},
+  "Orthopedic Surgeon": {"name": "Karan Bajaj", "number": "91-123-123-1234"},
+  "Gynecologist": {"name": "Deepika Verma", "number": "91-123-123-1234"}
+};
+
+const hospitals = {
+  "Cardiac": {"name": "Cardiac Hospital", "number": "91-001-001-0012"},
+  "Dermatology": {"name": "Dermatology Hospital", "number": "91-001-001-0012"},
+  "Neurology": {"name": "Neurology Hospital", "number": "91-001-001-0012"},
+  "Pediatric": {"name": "Pediatric Hospital", "number": "91-001-001-0012"},
+  "Oncology": {"name": "Oncology Hospital", "number": "91-001-001-0012"},
+  "Gynecology": {"name": "Gynecology Hospital", "number": "91-001-001-0012"},
+  "Orthopedic": {"name": "Orthopedic Hospital", "number": "91-001-001-0012"},
+  "Psychiatric": {"name": "Psychiatric Hospital", "number": "91-001-001-0012"},
+  "Ophthalmology": {"name": "Ophthalmology Hospital", "number": "91-001-001-0012"},
+  "Urology": {"name": "Urology Hospital", "number": "91-001-001-0012"},
+  "Pulmonology": {"name": "Pulmonology Hospital", "number": "91-001-001-0012"},
+  "Endocrinology": {"name": "Endocrinology Hospital", "number": "91-001-001-0012"},
+  "Gastroenterology": {"name": "Gastroenterology Hospital", "number": "91-001-001-0012"},
+  "Rheumatology": {"name": "Rheumatology Hospital", "number": "91-001-001-0012"},
+  "Nephrology": {"name": "Nephrology Hospital", "number": "91-001-001-0012"}
+};
+
+function showDoctorInfo() {
+  const selection = document.getElementById("doctorType").value;
+  const infoDiv = document.getElementById("doctorInfo");
+  const [type, name] = selection.split(" - ");
+  if (doctors[type]) {
+    const number = doctors[type].number;
+    infoDiv.innerHTML = `<strong>Doctor:</strong> ${name} - ${number}`;
+  } else {
+    infoDiv.innerHTML = "";
+  }
+}
+
+function showHospitalInfo() {
+  const hospitalType = document.getElementById("hospitalType").value;
+  const infoDiv = document.getElementById("hospitalInfo");
+  if (hospitals[hospitalType]) {
+    const {name, number} = hospitals[hospitalType];
+    infoDiv.innerHTML = `<strong>Hospital:</strong> ${name} - ${number}`;
+  } else {
+    infoDiv.innerHTML = "";
+  }
+}
+</script>
+</body>
+</html>
+

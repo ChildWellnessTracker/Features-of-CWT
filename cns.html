@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Comprehensive Nutritional Survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .survey-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        select, input[type="number"], button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="survey-container">
+    <h2>Nutritional Survey</h2>
+    <form 
+      id="nutritionSurveyForm">
+        <label for="breakfastToday">What did you have for breakfast today?</label>
+        <select id="breakfastToday">
+            <option value="Scrambled eggs and toast">Scrambled eggs and toast</option>
+            <option value="Oatmeal with bananas and honey">Oatmeal with bananas and honey</option>
+            <option value="Greek yogurt with mixed berries">Greek yogurt with mixed berries</option>
+            <option value="A smoothie bowl with assorted toppings">A smoothie bowl with assorted toppings</option>
+            <option value="Avocado toast with poached eggs">Avocado toast with poached eggs</option>
+            <option value="Pancakes with maple syrup">Pancakes with maple syrup</option>
+            <option value="Grits with cheese and bacon">Grits with cheese and bacon</option>
+            <option value="Baguette with brie and fig jam">Baguette with brie and fig jam</option>
+            <option value="Boiled eggs with asparagus soldiers">Boiled eggs with asparagus soldiers</option>
+            <option value="Cinnamon rolls">Cinnamon rolls</option>
+            <option value="Cheese omelet with mushrooms">Cheese omelet with mushrooms</option>
+            <option value="Breakfast wrap with ham and cheese">Breakfast wrap with ham and cheese</option>
+            <option value="Congee with pickled vegetables">Congee with pickled vegetables</option>
+            <option value="Latkes with sour cream and apple sauce">Latkes with sour cream and apple sauce</option>
+            <option value="Poached pear with yogurt and granola">Poached pear with yogurt and granola</option>
+            <option value="Stuffed French toast with cream cheese and berries">Stuffed French toast with cream cheese and berries</option>
+            <option value="Breakfast bruschetta with tomato and basil">Breakfast bruschetta with tomato and basil</option>
+            <option value="Protein bar and a piece of fruit">Protein bar and a piece of fruit</option>
+            <option value="Shakshuka with feta cheese">Shakshuka with feta cheese</option>
+            <option value="Egg and cheese muffin">Egg and cheese muffin</option>
+            <option value="Toast with honey and ricotta">Toast with honey and ricotta</option>
+            <option value="Buckwheat pancakes with blueberries">Buckwheat pancakes with blueberries</option>
+            <option value="Baked beans on toast">Baked beans on toast</option>
+            <option value="Breakfast burrito with black beans">Breakfast burrito with black beans</option>
+            <option value="Veggie smoothie with kale and avocado">Veggie smoothie with kale and avocado</option>
+            <option value="Crumpets with butter and marmite">Crumpets with butter and marmite</option>
+            <option value="Chorizo and egg breakfast taco">Chorizo and egg breakfast taco</option>
+            <option value="Sourdough pancakes">Sourdough pancakes</option>
+            <option value="Poached eggs with spinach and hollandaise">Poached eggs with spinach and hollandaise</option>
+            <option value="Rice cakes with almond butter and jelly">Rice cakes with almond butter and jelly</option>
+            <option value="English breakfast tea with milk and sugar">English breakfast tea with milk and sugar</option>
+            <option value="Breakfast sushi with smoked salmon and avocado">Breakfast sushi with smoked salmon and avocado</option>
+            <option value="Fried rice with egg">Fried rice with egg</option>
+            <option value="Dutch baby pancake with lemon and sugar">Dutch baby pancake with lemon and sugar</option>
+            <option value="Egg salad sandwich">Egg salad sandwich</option>
+            <option value="Bagel with walnut cream cheese">Bagel with walnut cream cheese</option>
+            <option value="Grits with cheese and bacon">Grits with cheese and bacon</option> 
+            <option value="Bagel with walnut cream cheese">Bagel with walnut cream cheese</option>
+            <option value="Grits with cheese and bacon">Grits with cheese and bacon</option>
+        </select>
+      <label for="fruitsThisWeek">Can you name three fruits you ate this week?</label>
+<select id="fruitsThisWeek"
+    <option value="Apples, bananas, cherries">Apples, bananas, cherries</option>
+    <option value="Blueberries, strawberries, grapes">Blueberries, strawberries, grapes</option>
+    <option value="Oranges, kiwis, pears">Oranges, kiwis, pears</option>
+    <option value="Peaches, plums, raspberries">Peaches, plums, raspberries</option>
+    <option value="Watermelons, cantaloupes, honeydew melons">Watermelons, cantaloupes, honeydew melons</option>
+    <option value="Mangoes, papayas, pineapples">Mangoes, papayas, pineapples</option>
+    <option value="Blackberries, cranberries, pomegranates">Blackberries, cranberries, pomegranates</option>
+    <option value="Avocados, guavas, lychees">Avocados, guavas, lychees</option>
+    <option value="Apricots, nectarines, passion fruit">Apricots, nectarines, passion fruit</option>
+    <option value="Dragon fruit, star fruit, jackfruit">Dragon fruit, star fruit, jackfruit</option>
+    <option value="Tangerines, grapefruits, lemons">Tangerines, grapefruits, lemons</option>
+    <option value="Limes, kumquats, figs">Limes, kumquats, figs</option>
+    <option value="Persimmons, dates, mulberries">Persimmons, dates, mulberries</option>
+    <option value="Rambutans, durians, soursops">Rambutans, durians, soursops</option>
+    <option value="Cherimoyas, gooseberries, elderberries">Cherimoyas, gooseberries, elderberries</option>
+    <option value="Jujubes, quinces, loquats">Jujubes, quinces, loquats</option>
+    <option value="Loganberries, boysenberries, lingonberries">Loganberries, boysenberries, lingonberries</option>
+    <option value="Acai berries, bilberries, chokeberries">Acai berries, bilberries, chokeberries</option>
+    <option value="Currants, huckleberries, jabuticabas">Currants, huckleberries, jabuticabas</option>
+    <option value="Kiwano, pitaya, tamarillo">Kiwano, pitaya, tamarillo</option>
+    <option value="Feijoas, carambolas, pawpaws">Feijoas, carambolas, pawpaws</option>
+    <option value="Breadfruit, longans, sapodillas">Breadfruit, longans, sapodillas</option>
+    <option value="Mamey sapote, canistel, lucumas">Mamey sapote, canistel, lucumas</option>
+    <option value="Cherries, apricots, apples">Cherries, apricots, apples</option>
+    <option value="Grapes, pears, peaches">Grapes, pears, peaches</option>
+    <option value="Plums, raspberries, watermelons">Plums, raspberries, watermelons</option>
+    <option value="Cantaloupes, honeydew melons, mangoes">Cantaloupes, honeydew melons, mangoes</option>
+    <option value="Papayas, pineapples, blackberries">Papayas, pineapples, blackberries</option>
+    <option value="Cranberries, pomegranates, avocados">Cranberries, pomegranates, avocados</option>
+    <option value="Guavas, lychees, apricots">Guavas, lychees, apricots</option>
+    <option value="Nectarines, passion fruit, dragon fruit">Nectarines, passion fruit, dragon fruit</option>
+    <option value="Star fruit, jackfruit, tangerines">Star fruit, jackfruit, tangerines</option>
+    <option value="Grapefruits, lemons, limes">Grapefruits, lemons, limes</option>
+    <option value="Kumquats, figs, persimmons">Kumquats, figs, persimmons</option>
+    <option value="Dates, mulberries, rambutans">Dates, mulberries, rambutans</option>
+    <option value="Durians, soursops, cherimoyas">Durians, soursops, cherimoyas</option>
+    <option value="Gooseberries, elderberries, jujubes">Gooseberries, elderberries, jujubes</option>
+    <option value="Quinces, loquats, loganberries">Quinces, loquats, loganberries</option>
+    <option value="Boysenberries, lingonberries, acai berries">Boysenberries, lingonberries, acai berries</option>
+    <option value="Bilberries, chokeberries, currants">Bilberries, chokeberries, currants</option>
+    <option value="Huckleberries, jabuticabas, kiwano">Huckleberries, jabuticabas, kiwano</option>
+    <option value="Pitaya, tamarillo, feijoas">Pitaya, tamarillo, feijoas</option>
+    <option value="Carambolas, pawpaws, breadfruit">Carambolas, pawpaws, breadfruit</option>
+    <option value="Longans, sapodillas, mamey sapote">Longans, sapodillas, mamey sapote</option>
+    <option value="Canistel, lucumas, cherries">Canistel, lucumas, cherries</option>
+    <option value="Grapes, raspberries, papayas">Grapes, raspberries, papayas</option>
+    <option value="Cranberries, lychees, star fruit">Cranberries, lychees, star fruit</option>
+    <option value="Jackfruit, kumquats, dates">Jackfruit, kumquats, dates</option>
+    <option value="Durians, quinces, acai berries">Durians, quinces, acai berries</option>
+    <option value="Bilberries, currants, breadfruit">Bilberries, currants, breadfruit</option>
+    <option value="Longans, canistel, raspberries">Longans, canistel, raspberries</option>
+    <option value="Papayas, cranberries, jackfruit">Papayas, cranberries, jackfruit</option>
+    <option value="Kumquats, durians, bilberries">Kumquats, durians, bilberries</option>
+    <option value="Currants, longans, raspberries">Currants, longans, raspberries</option>
+    <option value="Papayas, bilberries, durians">Papayas, bilberries, durians</option>
+    <option value="Kumquats, currants, longans">Kumquats, currants, longans</option>
+    <option value="Raspberries, durians, bilberries">Raspberries, durians, bilberries</option>
+    <option value="Papayas, currants, kumquats">Papayas, currants, kumquats</option>
+    <option value="Longans, durians, raspberries">Longans, durians, raspberries</option>
+    <option value="Bilberries, papayas, currants">Bilberries, papayas, currants</option>
+    <option value="Kumquats, longans, bilberries">Kumquats, longans, bilberries</option>
+    <option value="Durians, raspberries, papayas">Durians, raspberries, papayas</option>
+    <option value="Currants, bilberries, kumquats">Currants, bilberries, kumquats</option>
+    <option value="Longans, papayas, durians">Longans, papayas, durians</option>
+    <option value="Raspberries, currants, longans">Raspberries, currants, longans</option>
+    <option value="Bilberries, kumquats, raspberries">Bilberries, kumquats, raspberries</option>
+    <option value="Papayas, durians, currants">Papayas, durians, currants</option>
+    <option value="Longans, bilberries, papayas">Longans, bilberries, papayas</option>
+    <option value="Kumquats, raspberries, longans">Kumquats, raspberries, longans</option>
+    <option value="Durians, bilberries, currants">Durians, bilberries, currants</option>
+    <option value="Papayas, kumquats, durians">Papayas, kumquats, durians</option>
+    <option value="Raspberries, longans, bilberries">Raspberries, longans, bilberries</option>
+    <option value="Currants, papayas, kumquats">Currants, papayas, kumquats</option>
+    <option value="Durians, raspberries, longans">Durians, raspberries, longans</option>
+    <option value="Bilberries, currants, papayas">Bilberries, currants, papayas</option>
+    <option value="Kumquats, durians, raspberries">Kumquats, durians, raspberries</option>
+    <option value="Longans, bilberries, currants">Longans, bilberries, currants</option>
+    <option value="Papayas, raspberries, kumquats">Papayas, raspberries, kumquats</option>
+    <option value="Durians, longans, bilberries">Durians, longans, bilberries</option>
+    <option value="Currants, kumquats, papayas">Currants, kumquats, papayas</option>
+    <option value="Raspberries, durians, bilberries">Raspberries, durians, bilberries</option>
+    <option value="Longans, currants, kumquats">Longans, currants, kumquats</option>
+    <option value="Papayas, bilberries, raspberries">Papayas, bilberries, raspberries</option>
+    <option value="Kumquats, currants, durians">Kumquats, currants, durians</option>
+    <option value="Bilberries, longans, papayas">Bilberries, longans, papayas</option>
+    <option value="Raspberries, kumquats, currants">Raspberries, kumquats, currants</option>
+    <option value="Durians, bilberries, longans">Durians, bilberries, longans</option>
+    <option value="Papayas, currants, bilberries">Papayas, currants, bilberries</option>
+    <option value="Kumquats, raspberries, durians">Kumquats, raspberries, durians</option>
+</select
+  <label for="favoriteVegetable">What is your favorite vegetable and how do you like it prepared?</label>
+<select id="favoriteVegetable">
+    <option value="Carrots, roasted with honey and herbs">Carrots, roasted with honey and herbs</option>
+    <option value="Broccoli, steamed and topped with lemon butter">Broccoli, steamed and topped with lemon butter</option>
+    <option value="Spinach, sautéed with garlic and olive oil">Spinach, sautéed with garlic and olive oil</option>
+    <option value="Kale, massaged with avocado and lemon for a salad">Kale, massaged with avocado and lemon for a salad</option>
+    <option value="Brussels sprouts, roasted with balsamic vinegar and bacon">Brussels sprouts, roasted with balsamic vinegar and bacon</option>
+    <option value="Sweet potatoes, baked and filled with black beans and cheese">Sweet potatoes, baked and filled with black beans and cheese</option>
+    <option value="Cauliflower, riced and stir-fried with vegetables">Cauliflower, riced and stir-fried with vegetables</option>
+    <option value="Asparagus, grilled and sprinkled with Parmesan cheese">Asparagus, grilled and sprinkled with Parmesan cheese</option>
+    <option value="Bell peppers, stuffed with quinoa and vegetables">Bell peppers, stuffed with quinoa and vegetables</option>
+    <option value="Zucchini, spiralized into noodles and served with tomato sauce">Zucchini, spiralized into noodles and served with tomato sauce</option>
+    <option value="Eggplant, grilled and layered in a ratatouille">Eggplant, grilled and layered in a ratatouille</option>
+    <option value="Green beans, blanched and tossed with almonds">Green beans, blanched and tossed with almonds</option>
+    <option value="Peas, mashed and mixed with mint">Peas, mashed and mixed with mint</option>
+    <option value="Cucumbers, sliced and dressed in a vinegar salad">Cucumbers, sliced and dressed in a vinegar salad</option>
+    <option value="Corn, grilled and slathered with butter and spices">Corn, grilled and slathered with butter and spices</option>
+    <option value="Butternut squash, roasted and pureed into soup">Butternut squash, roasted and pureed into soup</option>
+    <option value="Avocado, sliced and served on toast with poached eggs">Avocado, sliced and served on toast with poached eggs</option>
+    <option value="Tomatoes, chopped and mixed in a fresh salsa">Tomatoes, chopped and mixed in a fresh salsa</option>
+    <option value="Onions, caramelized and used as a topping for burgers">Onions, caramelized and used as a topping for burgers</option>
+    <option value="Mushrooms, sautéed and served over polenta">Mushrooms, sautéed and served over polenta</option>
+    <option value="Beets, roasted and served in a salad with goat cheese">Beets, roasted and served in a salad with goat cheese</option>
+    <option value="Celery, chopped and added to a chicken salad">Celery, chopped and added to a chicken salad</option>
+    <option value="Radishes, pickled and used as a condiment">Radishes, pickled and used as a condiment</option>
+    <option value="Lettuce, used as a wrap for tacos">Lettuce, used as a wrap for tacos</option>
+    <option value="Cabbage, shredded and fermented into sauerkraut">Cabbage, shredded and fermented into sauerkraut</option>
+    <option value="Leeks, braised and served as a side dish">Leeks, braised and served as a side dish</option>
+    <option value="Artichokes, steamed and dipped in garlic butter">Artichokes, steamed and dipped in garlic butter</option>
+    <option value="Okra, fried and served with dipping sauce">Okra, fried and served with dipping sauce</option>
+    <option value="Swiss chard, sautéed with pine nuts and raisins">Swiss chard, sautéed with pine nuts and raisins</option>
+    <option value="Pumpkin, roasted and used in a pie">Pumpkin, roasted and used in a pie</option>
+    <option value="Bok choy, stir-fried with ginger and soy sauce">Bok choy, stir-fried with ginger and soy sauce</option>
+    <option value="Fennel, sliced thin and used in a citrus salad">Fennel, sliced thin and used in a citrus salad</option>
+    <option value="Parsnips, roasted and served with a maple glaze">Parsnips, roasted and served with a maple glaze</option>
+    <option value="Squash, cubed and roasted with spices">Squash, cubed and roasted with spices</option>
+    <option value="Arugula, used fresh in a pear and walnut salad">Arugula, used fresh in a pear and walnut salad</option>
+    <option value="Turnips, mashed and mixed with butter">Turnips, mashed and mixed with butter</option>
+    <option value="Rutabaga, roasted and served as fries">Rutabaga, roasted and served as fries</option>
+    <option value="Collard greens, simmered with ham hocks">Collard greens, simmered with ham hocks</option>
+    <option value="Watercress, used in a simple soup">Watercress, used in a simple soup</option>
+    <option value="Endive, filled with a crab salad">Endive, filled with a crab salad</option>
+    <option value="Garlic, roasted whole and spread on bread">Garlic, roasted whole and spread on bread</option>
+    <option value="Jalapeños, stuffed with cheese and baked">Jalapeños, stuffed with cheese and baked</option>
+    <option value="Bamboo shoots, added to a stir-fry">Bamboo shoots, added to a stir-fry</option>
+    <option value="Daikon radish, grated and used in a slaw">Daikon radish, grated and used in a slaw</option>
+    <option value="Seaweed, dried and used in sushi rolls">Seaweed, dried and used in sushi rolls</option>
+    <option value="Mustard greens, sautéed with bacon">Mustard greens, sautéed with bacon</option>
+    <option value="Chicory, used in a coffee substitute">Chicory, used in a coffee substitute</option>
+    <option value="Dandelion greens, sautéed with garlic">Dandelion greens, sautéed with garlic</option>
+    <option value="Horseradish, grated and used as a condiment">Horseradish, grated and used as a condiment</option>
+    <option value="Jicama, sliced and served with chili powder and lime">Jicama, sliced and served with chili powder and lime</option>
+    <option value="Kohlrabi, sliced and roasted with olive oil">Kohlrabi, sliced and roasted with olive oil</option>
+    <option value="Lotus root, sliced thin and fried as chips">Lotus root, sliced thin and fried as chips</option>
+    <option value="Nopales (cactus), grilled and used in tacos">Nopales (cactus), grilled and used in tacos</option>
+    <option value="Oca (New Zealand yam), roasted with herbs">Oca (New Zealand yam), roasted with herbs</option>
+    <option value="Parsley, chopped and used as a garnish">Parsley, chopped and used as a garnish</option>
+    <option value="Plantains, fried and served with a dipping sauce">Plantains, fried and served with a dipping sauce</option>
+    <option value="Portobello mushrooms, grilled and used as burger patties">Portobello mushrooms, grilled and used as burger patties</option>
+    <option value="Radicchio, grilled and used in a warm salad">Radicchio, grilled and used in a warm salad</option>
+    <option value="Rhubarb, stewed and used in a dessert">Rhubarb, stewed and used in a dessert</option>
+    <option value="Salsify, boiled and mashed with butter">Salsify, boiled and mashed with butter</option>
+    <option value="Sorrel, used in a creamy soup">Sorrel, used in a creamy soup</option>
+    <option value="Taro, boiled and served with coconut milk">Taro, boiled and served with coconut milk</option>
+    <option value="Water chestnuts, added to a stir-fry for crunch">Water chestnuts, added to a stir-fry for crunch</option>
+    <option value="Winged beans, stir-fried with garlic and fish sauce">Winged beans, stir-fried with garlic and fish sauce</option>
+    <option value="Yucca, boiled and served with a garlic sauce">Yucca, boiled and served with a garlic sauce</option>
+    <option value="Zucchini blossoms, stuffed with cheese and fried">Zucchini blossoms, stuffed with cheese and fried</option>
+    <option value="Acorn squash, stuffed with rice and cranberries">Acorn squash, stuffed with rice and cranberries</option>
+    <option value="Chayote, sautéed with tomatoes and onions">Chayote, sautéed with tomatoes and onions</option>
+    <option value="Hearts of palm, added to a tropical salad">Hearts of palm, added to a tropical salad</option>
+    <option value="Jerusalem artichokes, roasted and tossed with greens">Jerusalem artichokes, roasted and tossed with greens</option>
+    <option value="Mung bean sprouts, used in a fresh spring roll">Mung bean sprouts, used in a fresh spring roll</option>
+    <option value="Poblano peppers, roasted and used in chiles rellenos">Poblano peppers, roasted and used in chiles rellenos</option>
+    <option value="Romanesco, roasted with garlic and lemon">Romanesco, roasted with garlic and lemon</option>
+    <option value="Spaghetti squash, baked and used as a pasta substitute">Spaghetti squash, baked and used as a pasta substitute</option>
+    <option value="Sunchoke, roasted and added to a salad">Sunchoke, roasted and added to a salad</option>
+    <option value="Tatsoi, used in a warm Asian salad">Tatsoi, used in a warm Asian salad</option>
+    <option value="Yuca, fried and served with a citrus sauce">Yuca, fried and served with a citrus sauce</option>
+    <option value="Edamame, boiled and served with salt">Edamame, boiled and served with salt</option>
+    <option value="Enoki mushrooms, added to soups">Enoki mushrooms, added to soups</option>
+    <option value="Escarole, used in Italian wedding soup">Escarole, used in Italian wedding soup</option>
+    <option value="Fermented black beans, used in Chinese dishes">Fermented black beans, used in Chinese dishes</option>
+    <option value="Fiery hot peppers, used in homemade hot sauce">Fiery hot peppers, used in homemade hot sauce</option>
+    <option value="Green papaya, shredded and used in a Thai salad">Green papaya, shredded and used in a Thai salad</option>
+    <option value="Hen of the woods mushrooms, sautéed with soy sauce">Hen of the woods mushrooms, sautéed with soy sauce</option>
+    <option value="Iceberg lettuce, used in a classic wedge salad">Iceberg lettuce, used in a classic wedge salad</option>
+    <option value="Kabocha squash, roasted and used in curry">Kabocha squash, roasted and used in curry</option>
+    <option value="Kimchi, served as a side dish">Kimchi, served as a side dish</option>
+    <option value="Lion's mane mushrooms, sautéed and served on toast">Lion's mane mushrooms, sautéed and served on toast</option>
+    <option value="Maitake mushrooms, roasted and served with a soy glaze">Maitake mushrooms, roasted and served with a soy glaze</option>
+    <option value="Malabar spinach, used in Indian dishes">Malabar spinach, used in Indian dishes</option>
+    <option value="Nasturtium leaves, used fresh in salads for a peppery taste">Nasturtium leaves, used fresh in salads for a peppery taste</option>
+    <option value="Oyster mushrooms, grilled and served with polenta">Oyster mushrooms, grilled and served with polenta</option>
+    <option value="Peppadew peppers, stuffed with cheese">Peppadew peppers, stuffed with cheese</option>
+    <option value="Perilla leaves, used in Korean barbeque">Perilla leaves, used in Korean barbeque</option>
+    <option value="Purslane, used in a summer salad">Purslane, used in a summer salad</option>
+    <option value="Ramps, grilled and served with scrambled eggs">Ramps, grilled and served with scrambled eggs</option>
+    <option value="Shiitake mushrooms, used in miso soup">Shiitake mushrooms, used in miso soup</option>
+    <option value="Snow peas, stir-fried with shrimp">Snow peas, stir-fried with shrimp</option>
+    <option value="Sugar snap peas, blanched and served with hummus">Sugar snap peas, blanched and served with hummus</option>
+    <option value="Turmeric root, grated and used in golden milk">Turmeric root, grated and used in golden milk</option>
+</select>
+  <label for="dairyProducts">Do you drink milk or eat dairy products? Which ones?</label>
+<select id="dairyProducts">
+    <option value="I don’t eat dairy products">I don’t eat dairy products</option>
+    <option value="I enjoy all the dairy products">I enjoy all the dairy products</option>
+    <option value="Yes, I drink cow's milk">Yes, I drink cow's milk</option>
+    <option value="No, I don't consume dairy">No, I don't consume dairy</option>
+    <option value="I drink almond milk instead">I drink almond milk instead</option>
+    <option value="I enjoy yogurt">I enjoy yogurt</option>
+    <option value="I prefer goat cheese">I prefer goat cheese</option>
+    <option value="I have lactose-free milk">I have lactose-free milk</option>
+    <option value="I eat cheese regularly">I eat cheese regularly</option>
+    <option value="I opt for soy yogurt">I opt for soy yogurt</option>
+    <option value="I occasionally have Greek yogurt">I occasionally have Greek yogurt</option>
+    <option value="I consume cottage cheese">I consume cottage cheese</option>
+    <option value="I use cream cheese for cooking">I use cream cheese for cooking</option>
+    <option value="I enjoy feta cheese in salads">I enjoy feta cheese in salads</option>
+    <option value="I drink oat milk">I drink oat milk</option>
+    <option value="I don't drink milk but eat cheese">I don't drink milk but eat cheese</option>
+    <option value="I like ricotta cheese in lasagna">I like ricotta cheese in lasagna</option>
+    <option value="I have kefir for its probiotics">I have kefir for its probiotics</option>
+    <option value="I don't drink milk but eat yogurt">I don't drink milk but eat yogurt</option>
+    <option value="I sometimes use ghee in cooking">I sometimes use ghee in cooking</option>
+    <option value="I occasionally have mozzarella cheese">I occasionally have mozzarella cheese</option>
+    <option value="I prefer coconut milk in my coffee">I prefer coconut milk in my coffee</option>
+    <option value="I enjoy paneer in Indian dishes">I enjoy paneer in Indian dishes</option>
+    <option value="I often use sour cream for dips">I often use sour cream for dips</option>
+    <option value="I consume cheddar cheese on sandwiches">I consume cheddar cheese on sandwiches</option>
+    <option value="I have Swiss cheese with crackers">I have Swiss cheese with crackers</option>
+    <option value="I drink hemp milk instead of dairy">I drink hemp milk instead of dairy</option>
+    <option value="I use Parmesan cheese for pasta">I use Parmesan cheese for pasta</option>
+    <option value="I enjoy Brie cheese on crackers">I enjoy Brie cheese on crackers</option>
+    <option value="I like havarti cheese on bagels">I like havarti cheese on bagels</option>
+    <option value="I consume provolone cheese in sandwiches">I consume provolone cheese in sandwiches</option>
+    <option value="I have mascarpone cheese in desserts">I have mascarpone cheese in desserts</option>
+    <option value="I don't consume dairy or dairy substitutes">I don't consume dairy or dairy substitutes</option>
+    <option value="I sometimes use cream in my coffee">I sometimes use cream in my coffee</option>
+    <option value="I enjoy blue cheese dressing on salads">I enjoy blue cheese dressing on salads</option>
+    <option value="I like to snack on string cheese">I like to snack on string cheese</option>
+    <option value="I use buttermilk for baking">I use buttermilk for baking</option>
+    <option value="I occasionally have Monterey Jack cheese">I occasionally have Monterey Jack cheese</option>
+    <option value="I prefer ricotta cheese in desserts">I prefer ricotta cheese in desserts</option>
+    <option value="I occasionally have ice cream as a treat">I occasionally have ice cream as a treat</option>
+    <option value="I use condensed milk for desserts">I use condensed milk for desserts</option>
+    <option value="I sometimes have custard for dessert">I sometimes have custard for dessert</option>
+    <option value="I prefer whole milk in my cereal">I prefer whole milk in my cereal</option>
+    <option value="I occasionally have milkshakes">I occasionally have milkshakes</option>
+    <option value="I consume lactose-free yogurt">I consume lactose-free yogurt</option>
+    <option value="I use creamer in my coffee">I use creamer in my coffee</option>
+    <option value="I sometimes have caramelized milk">I sometimes have caramelized milk</option>
+    <option value="I enjoy buffalo mozzarella in Caprese salad">I enjoy buffalo mozzarella in Caprese salad</option>
+    <option value="I occasionally indulge in chocolate milk">I occasionally indulge in chocolate milk</option>
+    <option value="I consume non-dairy creamer">I consume non-dairy creamer</option>
+    <option value="I prefer non-dairy ice cream">I prefer non-dairy ice cream</option>
+    <option value="I enjoy cream cheese frosting on cakes">I enjoy cream cheese frosting on cakes</option>
+    <option value="I like to snack on cheese sticks">I like to snack on cheese sticks</option>
+    <option value="I use evaporated milk in recipes">I use evaporated milk in recipes</option>
+    <option value="I occasionally have frozen yogurt">I occasionally have frozen yogurt</option>
+    <option value="I enjoy ricotta cheese in pancakes">I enjoy ricotta cheese in pancakes</option>
+    <option value="I use whipped cream as a topping">I use whipped cream as a topping</option>
+    <option value="I sometimes have milk chocolate">I sometimes have milk chocolate</option>
+    <option value="I consume lactose-free cheese">I consume lactose-free cheese</option>
+    <option value="I occasionally have chocolate mousse">I occasionally have chocolate mousse</option>
+    <option value="I use non-dairy butter substitutes">I use non-dairy butter substitutes</option>
+    <option value="I sometimes have milk-based desserts">I sometimes have milk-based desserts</option>
+    <option value="I consume non-dairy cheese">I consume non-dairy cheese</option>
+    <option value="I occasionally have eggnog during holidays">I occasionally have eggnog during holidays</option>
+    <option value="I enjoy halloumi cheese in salads">I enjoy halloumi cheese in salads</option>
+    <option value="I use non-dairy milk in baking">I use non-dairy milk in baking</option>
+    <option value="I occasionally have creamy soups">I occasionally have creamy soups</option>
+    <option value="I use non-dairy yogurt in smoothies">I use non-dairy yogurt in smoothies</option>
+    <option value="I sometimes have white chocolate">I sometimes have white chocolate</option>
+    <option value="I enjoy vegan cheese on pizzas">I enjoy vegan cheese on pizzas</option>
+    <option value="I use non-dairy whipped cream">I use non-dairy whipped cream</option>
+    <option value="I occasionally have milk-based cocktails">I occasionally have milk-based cocktails</option>
+    <option value="I enjoy creamed spinach as a side dish">I enjoy creamed spinach as a side dish</option>
+    <option value="I use non-dairy cream cheese for spreads">I use non-dairy cream cheese for spreads</option>
+    <option value="I occasionally have tres leches cake">I occasionally have tres leches cake</option>
+    <option value="I consume lactose-free ice cream">I consume lactose-free ice cream</option>
+    <option value="I occasionally have chocolate fondue">I occasionally have chocolate fondue</option>
+    <option value="I enjoy latte with almond milk">I enjoy latte with almond milk</option>
+    <option value="I use non-dairy milk in cereal">I use non-dairy milk in cereal</option>
+    <option value="I occasionally have rice pudding">I occasionally have rice pudding</option>
+    <option value="I consume lactose-free chocolate milk">I consume lactose-free chocolate milk</option>
+    <option value="I occasionally have creamy pasta dishes">I occasionally have creamy pasta dishes</option>
+    <option value="I enjoy non-dairy cheesecake">I enjoy non-dairy cheesecake</option>
+    <option value="I use non-dairy milk for hot chocolate">I use non-dairy milk for hot chocolate</option>
+    <option value="I occasionally have custard-filled pastries">I occasionally have custard-filled pastries</option>
+    <option value="I consume lactose-free sour cream">I consume lactose-free sour cream</option>
+    <option value="I occasionally have non-dairy milkshakes">I occasionally have non-dairy milkshakes</option>
+    <option value="I enjoy vegan ice cream sandwiches">I enjoy vegan ice cream sandwiches</option>
+    <option value="I use non-dairy yogurt as a base for sauces">I use non-dairy yogurt as a base for sauces</option>
+    <option value="I occasionally have non-dairy creamy soups">I occasionally have non-dairy creamy soups</option>
+    <option value="I consume lactose-free creamer">I consume lactose-free creamer</option>
+    <option value="I occasionally have non-dairy creamy cocktails">I occasionally have non-dairy creamy cocktails</option>
+    <option value="I enjoy non-dairy cream cheese frosting">I enjoy non-dairy cream cheese frosting</option>
+    <option value="I use non-dairy whipped cream for desserts">I use non-dairy whipped cream for desserts</option>
+    <option value="I occasionally have non-dairy milk-based cocktails">I occasionally have non-dairy milk-based cocktails</option>
+    <option value="I enjoy vegan creamed spinach">I enjoy vegan creamed spinach</option>
+    <option value="I use non-dairy milk in creamy pasta sauces">I use non-dairy milk in creamy pasta sauces</option>
+    <option value="I enjoy non-dairy chocolate fondue">I enjoy non-dairy chocolate fondue</option>
+    <option value="I use non-dairy creamer in my coffee">I use non-dairy creamer in my coffee</option>
+    <option value="I occasionally have non-dairy hot chocolate">I occasionally have non-dairy hot chocolate</option>
+</select>
+  <label for="favoriteSnack">What is your favorite snack and how often do you eat it?</label>
+<select id="favoriteSnack">
+    <option value="Chips, a few times a week.">Chips, a few times a week.</option>
+    <option value="Chocolate, daily.">Chocolate, daily.</option>
+    <option value="Fruit, especially apples, every day.">Fruit, especially apples, every day.</option>
+    <option value="Nuts, like almonds, nearly every day.">Nuts, like almonds, nearly every day.</option>
+    <option value="Popcorn, during movie nights on weekends.">Popcorn, during movie nights on weekends.</option>
+    <option value="Cheese slices, occasionally.">Cheese slices, occasionally.</option>
+    <option value="Yogurt, every morning.">Yogurt, every morning.</option>
+    <option value="Granola bars, as a midday snack at work.">Granola bars, as a midday snack at work.</option>
+    <option value="Pretzels, with an afternoon coffee.">Pretzels, with an afternoon coffee.</option>
+    <option value="Ice cream, on hot days.">Ice cream, on hot days.</option>
+    <option value="Carrot sticks with hummus, quite often.">Carrot sticks with hummus, quite often.</option>
+    <option value="Cookies, as a treat on Fridays.">Cookies, as a treat on Fridays.</option>
+    <option value="Sushi, once a month.">Sushi, once a month.</option>
+    <option value="Cereal, as a late-night snack.">Cereal, as a late-night snack.</option>
+    <option value="Rice cakes, topped with avocado, regularly.">Rice cakes, topped with avocado, regularly.</option>
+    <option value="Gummy bears, when I need a sugar fix.">Gummy bears, when I need a sugar fix.</option>
+    <option value="Bananas, for a pre-workout boost.">Bananas, for a pre-workout boost.</option>
+    <option value="Crackers with peanut butter, for an energy lift.">Crackers with peanut butter, for an energy lift.</option>
+    <option value="Smoothies, after morning runs.">Smoothies, after morning runs.</option>
+    <option value="Dried fruit, for a healthy option.">Dried fruit, for a healthy option.</option>
+    <option value="Trail mix, on hiking days.">Trail mix, on hiking days.</option>
+    <option value="Biscuits, with evening tea.">Biscuits, with evening tea.</option>
+    <option value="Jerky, during road trips.">Jerky, during road trips.</option>
+    <option value="Cupcakes, for special occasions.">Cupcakes, for special occasions.</option>
+    <option value="Toast with jam, on lazy Sundays.">Toast with jam, on lazy Sundays.</option>
+    <option value="French fries, rarely, as a guilty pleasure.">French fries, rarely, as a guilty pleasure.</option>
+    <option value="Grapes, frozen as a cool snack.">Grapes, frozen as a cool snack.</option>
+    <option value="Bagels, with cream cheese, occasionally.">Bagels, with cream cheese, occasionally.</option>
+    <option value="Pita chips, with a dip on game nights.">Pita chips, with a dip on game nights.</option>
+    <option value="Muffins, once in a while for breakfast.">Muffins, once in a while for breakfast.</option>
+    <option value="Tacos, every Tuesday.">Tacos, every Tuesday.</option>
+    <option value="Oatmeal cookies, as a healthier choice.">Oatmeal cookies, as a healthier choice.</option>
+    <option value="Protein bars, after workouts.">Protein bars, after workouts.</option>
+    <option value="Soda crackers, when I'm feeling unwell.">Soda crackers, when I'm feeling unwell.</option>
+    <option value="Pancakes, on family Sundays.">Pancakes, on family Sundays.</option>
+    <option value="Fried chicken, sparingly.">Fried chicken, sparingly.</option>
+    <option value="Nachos, during sports events.">Nachos, during sports events.</option>
+    <option value="Watermelon, in the summer.">Watermelon, in the summer.</option>
+    <option value="Cheese puffs, for a fun snack.">Cheese puffs, for a fun snack.</option>
+    <option value="Sourdough bread, with butter, occasionally.">Sourdough bread, with butter, occasionally.</option>
+    <option value="Peanuts, at bars or social gatherings.">Peanuts, at bars or social gatherings.</option>
+    <option value="Tuna salad, as a light lunch.">Tuna salad, as a light lunch.</option>
+    <option value="Gelato, when vacationing in Italy.">Gelato, when vacationing in Italy.</option>
+    <option value="Croissants, on leisurely mornings.">Croissants, on leisurely mornings.</option>
+    <option value="Edamame, for a nutritious option.">Edamame, for a nutritious option.</option>
+    <option value="Brownies, when I'm baking for friends.">Brownies, when I'm baking for friends.</option>
+    <option value="Quiche, as a brunch item.">Quiche, as a brunch item.</option>
+    <option value="Pizza slices, as a weekend treat.">Pizza slices, as a weekend treat.</option>
+    <option value="Spring rolls, at family gatherings.">Spring rolls, at family gatherings.</option>
+    <option value="Candy bars, during exam season.">Candy bars, during exam season.</option>
+    <option value="Potato salad, at picnics.">Potato salad, at picnics.</option>
+    <option value="Ramen, for a quick meal.">Ramen, for a quick meal.</option>
+    <option value="Fish and chips, when by the seaside.">Fish and chips, when by the seaside.</option>
+    <option value="Vegetable sticks, for a diet-conscious choice.">Vegetable sticks, for a diet-conscious choice.</option>
+    <option value="Donuts, on office Fridays.">Donuts, on office Fridays.</option>
+    <option value="Bruschetta, at Italian restaurants.">Bruschetta, at Italian restaurants.</option>
+    <option value="Mac and cheese, comfort food rarely.">Mac and cheese, comfort food rarely.</option>
+    <option value="S'mores, at camping trips.">S'mores, at camping trips.</option>
+    <option value="Fruit tarts, at bakeries occasionally.">Fruit tarts, at bakeries occasionally.</option>
+    <option value="Popsicles, to beat the heat.">Popsicles, to beat the heat.</option>
+    <option value="Beef jerky, on long drives.">Beef jerky, on long drives.</option>
+    <option value="Cheeseburger, once in a blue moon.">Cheeseburger, once in a blue moon.</option>
+    <option value="Falafel, when exploring Middle Eastern cuisine.">Falafel, when exploring Middle Eastern cuisine.</option>
+    <option value="Waffles, with maple syrup, sometimes.">Waffles, with maple syrup, sometimes.</option>
+    <option value="Pastry, with a cup of coffee.">Pastry, with a cup of coffee.</option>
+    <option value="Scones, with clotted cream and jam, rarely.">Scones, with clotted cream and jam, rarely.</option>
+    <option value="Cucumber sandwiches, for a light snack.">Cucumber sandwiches, for a light snack.</option>
+    <option value="Lasagna, as a treat from Italian grandma.">Lasagna, as a treat from Italian grandma.</option>
+    <option value="Focaccia, with olive oil, occasionally.">Focaccia, with olive oil, occasionally.</option>
+    <option value="Chicken nuggets, during late-night cravings.">Chicken nuggets, during late-night cravings.</option>
+    <option value="Frittata, for a protein-rich option.">Frittata, for a protein-rich option.</option>
+    <option value="Rice pudding, as a comfort dessert.">Rice pudding, as a comfort dessert.</option>
+    <option value="Tiramisu, for a decadent treat.">Tiramisu, for a decadent treat.</option>
+    <option value="Baguette, with cheese, in France.">Baguette, with cheese, in France.</option>
+    <option value="Dim sum, on weekend mornings.">Dim sum, on weekend mornings.</option>
+    <option value="Corn on the cob, at summer fairs.">Corn on the cob, at summer fairs.</option>
+    <option value="Salmon sushi, as a favorite Japanese snack.">Salmon sushi, as a favorite Japanese snack.</option>
+    <option value="Churros, at theme parks.">Churros, at theme parks.</option>
+    <option value="Shrimp cocktail, at celebrations.">Shrimp cocktail, at celebrations.</option>
+    <option value="Empanadas, exploring Latin American flavors.">Empanadas, exploring Latin American flavors.</option>
+    <option value="Fried rice, for a filling snack.">Fried rice, for a filling snack.</option>
+    <option value="Gazpacho, in hot weather.">Gazpacho, in hot weather.</option>
+    <option value="Hot dogs, at baseball games.">Hot dogs, at baseball games.</option>
+    <option value="Mango, when in season.">Mango, when in season.</option>
+    <option value="Pasta salad, at potlucks.">Pasta salad, at potlucks.</option>
+    <option value="Quesadillas, for a quick fix.">Quesadillas, for a quick fix.</option>
+    <option value="Ratatouille, for a vegetable intake.">Ratatouille, for a vegetable intake.</option>
+    <option value="Strawberries, dipped in chocolate, on romantic occasions.">Strawberries, dipped in chocolate, on romantic occasions.</option>
+    <option value="Turkey sandwich, for a post-Thanksgiving snack.">Turkey sandwich, for a post-Thanksgiving snack.</option>
+    <option value="Vanilla pudding, as an easy dessert.">Vanilla pudding, as an easy dessert.</option>
+    <option value="Wrap, with chicken and veggies, often.">Wrap, with chicken and veggies, often.</option>
+    <option value="Zucchini bread, when zucchinis are plentiful.">Zucchini bread, when zucchinis are plentiful.</option>
+    <option value="Apple pie, during the fall.">Apple pie, during the fall.</option>
+    <option value="Burritos, as a filling meal.">Burritos, as a filling meal.</option>
+    <option value="Cheesecake, at dessert cafes.">Cheesecake, at dessert cafes.</option>
+    <option value="Dumplings, for a taste of home.">Dumplings, for a taste of home.</option>
+    <option value="Egg rolls, with sweet and sour sauce.">Egg rolls, with sweet and sour sauce.</option>
+    <option value="French toast, as a Sunday breakfast.">French toast, as a Sunday breakfast.</option>
+    <option value="Greek salad, for a fresh option.">Greek salad, for a fresh option.</option>
+    <option value="Hummus, with everything, frequently.">Hummus, with everything, frequently.</option>
+</select>
+  <label for="drinksWithMeals">What kind of drinks do you usually have with your meals?</label>
+<select id="drinksWithMeals">
+    <option value="Water">Water</option>
+    <option value="Sparkling water">Sparkling water</option>
+    <option value="Lemon water">Lemon water</option>
+    <option value="Iced water">Iced water</option>
+    <option value="Mineral water">Mineral water</option>
+    <option value="Tap water">Tap water</option>
+    <option value="Filtered water">Filtered water</option>
+    <option value="Tea">Tea</option>
+    <option value="Iced tea">Iced tea</option>
+    <option value="Green tea">Green tea</option>
+    <option value="Black tea">Black tea</option>
+    <option value="Herbal tea">Herbal tea</option>
+    <option value="Oolong tea">Oolong tea</option>
+    <option value="White tea">White tea</option>
+    <option value="Matcha">Matcha</option>
+    <option value="Coffee">Coffee</option>
+    <option value="Iced coffee">Iced coffee</option>
+    <option value="Espresso">Espresso</option>
+    <option value="Latte">Latte</option>
+    <option value="Cappuccino">Cappuccino</option>
+    <option value="Americano">Americano</option>
+    <option value="Mocha">Mocha</option>
+    <option value="Macchiato">Macchiato</option>
+    <option value="Flat white">Flat white</option>
+    <option value="Hot chocolate">Hot chocolate</option>
+    <option value="Milk">Milk</option>
+    <option value="Skim milk">Skim milk</option>
+    <option value="Whole milk">Whole milk</option>
+    <option value="Almond milk">Almond milk</option>
+    <option value="Soy milk">Soy milk</option>
+    <option value="Rice milk">Rice milk</option>
+    <option value="Oat milk">Oat milk</option>
+    <option value="Coconut milk">Coconut milk</option>
+    <option value="Chocolate milk">Chocolate milk</option>
+    <option value="Buttermilk">Buttermilk</option>
+    <option value="Lassi">Lassi</option>
+    <option value="Kefir">Kefir</option>
+    <option value="Soda">Soda</option>
+    <option value="Cola">Cola</option>
+    <option value="Diet soda">Diet soda</option>
+    <option value="Root beer">Root beer</option>
+    <option value="Ginger ale">Ginger ale</option>
+    <option value="Lemon-lime soda">Lemon-lime soda</option>
+    <option value="Tonic water">Tonic water</option>
+    <option value="Club soda">Club soda</option>
+    <option value="Fruit juice">Fruit juice</option>
+    <option value="Orange juice">Orange juice</option>
+    <option value="Apple juice">Apple juice</option>
+    <option value="Cranberry juice">Cranberry juice</option>
+    <option value="Grape juice">Grape juice</option>
+    <option value="Tomato juice">Tomato juice</option>
+    <option value="Pineapple juice">Pineapple juice</option>
+    <option value="Lemonade">Lemonade</option>
+    <option value="Limeade">Limeade</option>
+    <option value="Pomegranate juice">Pomegranate juice</option>
+    <option value="Mango juice">Mango juice</option>
+    <option value="Carrot juice">Carrot juice</option>
+    <option value="Beet juice">Beet juice</option>
+    <option value="Smoothies">Smoothies</option>
+    <option value="Protein shakes">Protein shakes</option>
+    <option value="Meal replacement shakes">Meal replacement shakes</option>
+    <option value="Sports drinks">Sports drinks</option>
+    <option value="Energy drinks">Energy drinks</option>
+    <option value="Coconut water">Coconut water</option>
+    <option value="Vegetable juice">Vegetable juice</option>
+    <option value="V8">V8</option>
+    <option value="Bloody Mary (non-alcoholic version)">Bloody Mary (non-alcoholic version)</option>
+    <option value="Iced matcha">Iced matcha</option>
+    <option value="Iced chai latte">Iced chai latte</option>
+    <option value="Bubble tea">Bubble tea</option>
+    <option value="Kombucha">Kombucha</option>
+    <option value="Sake (for those who consume alcohol with meals)">Sake (for those who consume alcohol with meals)</option>
+    <option value="Wine (red, white, rosé)">Wine (red, white, rosé)</option>
+    <option value="Beer">Beer</option>
+    <option value="Light beer">Light beer</option>
+    <option value="Craft beer">Craft beer</option>
+    <option value="Cider">Cider</option>
+    <option value="Mead">Mead</option>
+    <option value="Champagne">Champagne</option>
+    <option value="Prosecco">Prosecco</option>
+    <option value="Spirits (vodka, gin, rum, whiskey, tequila, etc.)">Spirits (vodka, gin, rum, whiskey, tequila, etc.)</option>
+    <option value="Cocktails">Cocktails</option>
+    <option value="Mocktails">Mocktails</option>
+    <option value="Margarita (non-alcoholic version)">Margarita (non-alcoholic version)</option>
+    <option value="Mojito (non-alcoholic version)">Mojito (non-alcoholic version)</option>
+    <option value="Sangria (non-alcoholic version)">Sangria (non-alcoholic version)</option>
+    <option value="Pina colada (non-alcoholic version)">Pina colada (non-alcoholic version)</option>
+    <option value="Martini (non-alcoholic version)">Martini (non-alcoholic version)</option>
+    <option value="Aperitifs (non-alcoholic version)">Aperitifs (non-alcoholic version)</option>
+    <option value="Digestifs (non-alcoholic version)">Digestifs (non-alcoholic version)</option>
+    <option value="Seltzer">Seltzer</option>
+    <option value="Flavored seltzer">Flavored seltzer</option>
+    <option value="Aloe vera drink">Aloe vera drink</option>
+    <option value="Horchata">Horchata</option>
+    <option value="Chai">Chai</option>
+    <option value="Yerba mate">Yerba mate</option>
+    <option value="Tamarind drink">Tamarind drink</option>
+    <option value="Hibiscus tea">Hibiscus tea</option>
+    <option value="Kvass">Kvass</option>
+    <option value="Ayran">Ayran</option>
+</select>
+  <label for="vitaminsSupplements">Do you take vitamins or supplements?</label>
+<select id="vitaminsSupplements">
+    <option value="No, I do not take any vitamins or supplements">No, I do not take any vitamins or supplements</option>
+    <option value="Yes, multivitamins">Yes, multivitamins</option>
+    <option value="Yes, vitamin D">Yes, vitamin D</option>
+    <option value="Yes, vitamin C">Yes, vitamin C</option>
+    <option value="Yes, fish oil/omega-3">Yes, fish oil/omega-3</option>
+    <option value="Yes, calcium">Yes, calcium</option>
+    <option value="Yes, iron">Yes, iron</option>
+    <option value="Yes, B vitamins">Yes, B vitamins</option>
+    <option value="Yes, magnesium">Yes, magnesium</option>
+    <option value="Yes, probiotics">Yes, probiotics</option>
+    <option value="Yes, zinc">Yes, zinc</option>
+    <option value="Yes, herbal supplements">Yes, herbal supplements</option>
+    <option value="Yes, protein supplements">Yes, protein supplements</option>
+    <option value="Yes, other">Yes, other</option>
+</select>
+  <label for="waterIntake">How many glasses of water do you drink in a day?</label>
+<select id="waterIntake">
+    <option value="Less than 1">Less than 1</option>
+    <option value="1-3 glasses">1-3 glasses</option>
+    <option value="4-6 glasses">4-6 glasses</option>
+    <option value="7-9 glasses">7-9 glasses</option>
+    <option value="10 or more glasses">10 or more glasses</option>
+</select>
+ <label for="fastFoodFrequency">How often do you eat fast food or takeaway meals?</label>
+<select id="fastFoodFrequency">
+    <option value="Never">Never</option>
+    <option value="Once a month">Once a month</option>
+    <option value="2-3 times a month">2-3 times a month</option>
+    <option value="Once a week">Once a week</option>
+    <option value="2-3 times a week">2-3 times a week</option>
+    <option value="4 or more times a week">4 or more times a week</option>
+</select>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("nutritionSurveyForm").onsubmit = function(event) {
+        event.preventDefault();
+        // Example function to handle form submission
+        alert("Survey submitted!");
+    };
+</script>
+<script>
+document.getElementById("nutritionSurveyForm").onsubmit = function(event) {
+    event.preventDefault();
+    alert("Thank you for completing the survey!");
+    event.target.reset();
+};
+</script>
+<script src="formEnhancements.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("nutritionSurveyForm");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const breakfastChoice = document.getElementById("breakfastToday").value;
+        let recommendation = "";
+        switch (breakfastChoice) {
+            case "Scrambled eggs and toast":
+                recommendation = "Consider adding a serving of vegetables to your breakfast for added nutrients.";
+                break;
+            default:
+                recommendation = "Keep eating a balanced diet and stay active for a healthy lifestyle.";
+        }
+        document.body.innerHTML = '';
+        const newContent = document.createElement("div");
+        newContent.innerHTML = `<h1>Health Recommendation</h1><p>${recommendation}</p><button onclick="Comprehensive Nutritional Survey.html;">Take Survey Again</button>`;
+        document.body.appendChild(newContent);
+    });
+});
+</script>
+</body>
+</html>
